@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Portal</title>
+</head>
+<body>
+    <h2>Register - Job Application</h2>
+    <form onsubmit="return validateEmail()">
+        Email:
+        <input type="text" id="email" placeholder="Enter your email">
+        <button type="submit">Register</button>
+    </form>
+    <p id="result"></p> 
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (pattern.test(email)) {
+                   Alert("Email is valid. Registration successful!");
+                return true;
+            } else {
+                document.getElementById("result").innerHTML = 
+                    "Invalid email format. Please check again.";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

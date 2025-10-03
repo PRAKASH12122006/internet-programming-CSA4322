@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping - Checkout</title>
+</head>
+<body>
+    <h2>Checkout Page</h2>
+    <button onclick="confirmCheckout()">Proceed to Payment</button>
+    <p id="message"></p>
+    <script>
+        function confirmCheckout() {
+            alert("Your action has been registered! Proceeding to payment...");
+            document.getElementById("message").innerHTML = 
+                "Your checkout request has been confirmed!";
+        }
+    </script>
+</body>
+</html>
