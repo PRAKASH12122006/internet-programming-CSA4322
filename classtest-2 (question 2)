@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal</title>
+</head>
+<body>
+    <h2>Welcome to Student Portal</h2>
+    <button onclick="showProfile()">View Profile</button>
+    <div id="profile"></div>
+    <script>
+        function showProfile() {
+            var name = "surya velu";
+            var age = 20;
+            document.getElementById("profile").innerHTML = 
+                "<h3>Student Profile</h3>" +
+                "<p><b>Name:</b> " + name + "</p>" +
+                "<p><b>Age:</b> " + age + "</p>";
+        }
+    </script>
+</body>
+</html>
